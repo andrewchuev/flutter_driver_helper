@@ -1,7 +1,7 @@
 import 'package:driver_helper/services/articles_repository.dart';
 import 'package:flutter/material.dart';
 
-import 'article_single.dart';
+import 'single_article.dart';
 
 class Articles extends StatelessWidget {
   Articles({Key? key}) : super(key: key);

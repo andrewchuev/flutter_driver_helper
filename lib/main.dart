@@ -21,7 +21,7 @@ class DriverHelper extends StatelessWidget {
         return MaterialApp(
           theme: theme,
           debugShowCheckedModeBanner: false,
-          home: HomePage(title: 'Driver Helper'),
+          home: const HomePage(title: 'Driver Helper'),
         );
       },
     );
