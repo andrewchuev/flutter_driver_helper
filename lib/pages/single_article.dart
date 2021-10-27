@@ -20,20 +20,19 @@ class ArticleSingle extends StatelessWidget {
           return Scaffold(
             appBar: AppBar(
                 title: Text(title),
-
                 actions: [
-                  GestureDetector(
-                      onTap: () => context.read<SingleArticleCubit>().increaseFontSize(),
-                      child: Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                          child: const Icon(Icons.zoom_in, size: 40.0,)
-                      )
-                  ),
                   GestureDetector(
                       onTap: () => context.read<SingleArticleCubit>().decreaseFontSize(),
                       child: Container(
                           padding: const EdgeInsets.symmetric(horizontal: 10.0),
                           child: const Icon(Icons.zoom_out, size: 40.0,)
+                      )
+                  ),
+                  GestureDetector(
+                      onTap: () => context.read<SingleArticleCubit>().increaseFontSize(),
+                      child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                          child: const Icon(Icons.zoom_in, size: 40.0,)
                       )
                   ),
                 ]),

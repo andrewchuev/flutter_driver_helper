@@ -1,7 +1,7 @@
 part of 'single_article_cubit.dart';
 
 abstract class SingleArticleState extends Equatable {
-  double fontSize = 20;
+  double fontSize = 32;
   List<Object> get props => [fontSize];
 }
 
