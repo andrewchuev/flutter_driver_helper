@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
+import 'ui/pages/home_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'theme/theme_cubit.dart';
+import 'domain/blocs/theme/theme_cubit.dart';
 
 void main() {
+  Bloc.observer = AppBlocObserver();
   runApp(BlocProvider(
     create: (context) => ThemeCubit(),
     child: const DriverHelper(),
@@ -28,3 +29,16 @@ class DriverHelper extends StatelessWidget {
   }
 }
 
+class AppBlocObserver extends BlocObserver {
+  @override
+  void onChange(BlocBase bloc, Change change) {
+    super.onChange(bloc, change);
+    if (bloc is Cubit) print(change);
+  }
+
+  @override
+  void onTransition(Bloc bloc, Transition transition) {
+    super.onTransition(bloc, transition);
+    print(transition);
+  }
+}

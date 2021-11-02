@@ -1,4 +1,4 @@
-import 'package:driver_helper/services/articles_repository.dart';
+import '/domain/data_providers/articles_repository.dart';
 import 'package:flutter/material.dart';
 
 import 'single_article.dart';

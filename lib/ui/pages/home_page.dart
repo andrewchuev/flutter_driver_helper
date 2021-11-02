@@ -1,4 +1,4 @@
-import 'package:driver_helper/theme/theme_cubit.dart';
+import 'package:driver_helper/domain/blocs/theme/theme_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
